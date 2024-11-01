@@ -1,0 +1,430 @@
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+#menuToggle{
+    display: none;
+}
+span.menu-text{
+    display: none;
+
+}
+body{
+    font-family: 'Monserrat',sans-serif !important;
+    overflow-x:hidden ;
+   
+}
+.nav-toggle{
+    display: none;
+}
+.header{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: #f3efef; 
+    padding: 10px 0 0 0;
+    width: 100%;
+}
+.header .header_content{
+    display:grid;
+    grid-template-columns: 1fr 5fr auto;
+    align-items: center;
+    width: 90vw;
+    justify-content: center;
+}
+.header .logo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 5%;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    background-color: #ef5d56; /* Màu nền của hình tròn */
+    border-radius: 50%; /* Tạo hình tròn */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* Màu chữ */
+    font-size: 33px; /* Kích thước chữ */
+    font-weight: bold; 
+    font-family: 'Monserrat',sans-serif;
+}
+.logo-text {
+    font-family: 'Monserrat',sans-serif;
+    font-size: 24px;
+    color: #333; /* Màu chữ của tên thương hiệu */
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+.header .nav{
+    display: flex  ;
+    justify-content: center;
+    position: relative;
+}
+.header .nav li{
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 2px;
+}
+.header .nav li a{
+    text-transform: uppercase;
+    font-weight: 550;
+    color: #3f3e3e;
+    font-size: 14px;
+    
+}
+.header .nav li .link{
+    padding-bottom: 2.5rem;
+    color:#3b3939;
+}
+.header .nav li a:hover{
+    text-decoration: underline 1px;
+    text-underline-offset: 5px;
+    color: #c8717a;
+    transition: 0.1s;
+}
+.header .nav li i{
+    font-size: 12px;
+}
+.header .cart-btn-wrapper{
+    display: flex;
+    justify-items: last baseline;
+    align-items: center;
+    gap: 16px;
+}
+.header .cart-btn-wrapper span i{
+    color: rgb(69, 62, 62);
+    font-size: 1.5rem;
+  
+}
+.cart-btn-wrapper{
+    display: none;
+}
+header ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 30px;
+}
+/* header ul li:last-child {
+    margin-right: 12px;
+} */
+
+header ul li a {
+    text-decoration: none;
+    color: #242426;
+    padding: 40px 0;
+    display: inline-block;
+    transition: all ease 0.3s;
+    font-size: 18px;
+}
+
+header ul li a:hover {
+    color: #c8717a;
+}
+
+header ul .sub-menu {
+    position: absolute;
+    top: 93px;
+    left: 0;
+    width: 200px;
+    background-color: #ffffff;
+    box-shadow: 0 20px 45px #00000020;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+    transition:  0.3s ;
+}
+
+header ul li:hover .sub-menu {
+    opacity: 1;
+    visibility: visible;
+    z-index: 99;
+}
+
+header ul .sub-menu li {
+    margin: 0;
+    width: 100%;
+}
+
+header ul .sub-menu li a {
+    padding: 15px 20px;
+    display: inline-block;
+    width: 100%;
+}
+
+.sub-menu .home{
+    padding: 15px 20px;
+}
+
+.sub-menu .home a{
+    padding: 0;
+    width: auto;
+}
+
+
+.sub-menu .home  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+/* section hero */
+.section-hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 0 0 0;
+    width: 100%;
+    height: 10%;
+    
+}
+.section-hero .hero{
+    gap: 3rem;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 3fr 1fr ;
+    width: 95vw;
+    
+}
+
+.section-hero .hero .left img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.section-hero .hero .right{
+    position: relative; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.section-hero .hero .right img.img1 , img.img2{
+    margin-bottom: 8px;
+}
+.section-hero .hero .right img{
+    width: 100%;
+}
+.section-hero .hero .left{
+    position: relative;
+}
+.section-hero .hero .left .dots{
+    position: absolute;
+    bottom: 15px;
+    left :50%;
+    transform: translate(-50%);
+}
+.section-hero .hero .left .dots .dot:first-child{
+    background: #acacac;
+}
+.section-hero .hero .left .dots .dot{
+    height: 16px;
+    width: 16px;
+    background: #acacac;
+    border: 3px solid #fff;
+    border-radius: 50%; /*bo goc o vuong*/
+    background: #f1f1f1;
+
+}
+.section-featured .featured .featured-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 1.8rem 0;
+  
+    
+}
+.section-featured .featured .featured-links a{
+    text-transform: uppercase;
+    font-weight: 780;
+    color: #acacac;
+}
+.section-featured .featured .featured-links a:hover{
+    text-decoration: underline 1.6px;
+    text-underline-offset: 5px;
+    color:#c8717a;
+    transition: 0.05s;
+}
+
+/* section product */
+.section-featured{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 0 0 0;
+    width: 100%;
+}
+
+.section-featured .featured .product{
+    gap: 2rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 90vw;
+}
+
+.section-featured .featured .product .content{
+    display: flex;   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 0;
+    gap: 0.5rem;
+}
+.section-featured .featured .product img{
+    width: 100%;    
+}
+.section-featured .featured .product .content .category{
+    text-transform: uppercase;
+    text-decoration: underline 1px solid ;
+    font-size: 14px;
+    text-underline-offset: 4px;
+    color: #acacac;
+    font-weight: 550;
+    
+}
+.section-featured .featured .product .content .name{
+    color:#000;
+    font-size: 16px;
+    font-weight: 500;
+    align-items: center;
+    margin:0;
+}
+.section-featured .featured .product .content .price span{
+    font-weight: 600;
+    color: #cd7380;
+   
+}
+.section-featured .featured .product .content .price .old-price{
+    font-weight: 600;
+    text-decoration: line-through;
+    color:#acacac;
+    
+}
+.section-featured .featured .product .content .add_to_card{
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 25px;
+    border: none;
+    color:#7e7a7a;
+    font-weight: 750;
+    cursor: pointer;
+    padding: 1rem 2rem;
+}
+.section-featured .featured .product .content .add_to_card:hover{
+    color:#fff;
+    background: #c8717a;
+}
+/* Call to action */
+.cta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 0 0 0;
+    width: 100%;
+}
+.cta .cta_text_box{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: 40%;
+}
+.cta .cta_text_box .input{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    border:none;
+    background:#f2efefa8;
+    margin-bottom: 2rem;
+    outline:none;
+    padding: 1rem 1rem;
+}
+.cta .cta_text_box div {
+    width: 100%;
+}
+
+.cta .cta_text_box div .name {
+    text-align: center;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    
+}
+
+.cta .cta_text_box .textarea{
+    height: 200px;
+    outline: none;
+    padding: 1rem 1rem;
+    margin-bottom: 0;
+}
+
+.cta .cta_text_box .send {
+    margin: 1rem 0;
+    padding: 0.6rem 1.5rem;
+    border-radius: 20px;
+    border: none;
+    background: rgba(191, 65, 65, 0.714);
+    color: #fff;
+}
+.cta .cta_text_box .send:hover{
+    color: #fff;
+    background: #300f0f20;
+    transition: 0.5s;
+}
+/* footer */
+
+.footer{
+        display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem 0 0 0;
+            width: 100%;
+            padding: 2rem 0;
+            background: #f1f1f1;
+}
+
+.footer .grid_footer {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
+    gap: 0.5rem;
+    width: 90vw;
+}
+
+.footer .grid_footer .location-col .location{
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: underline 1px;
+    text-underline-offset: 8px;
+    padding-bottom: 1.5rem;
+
+}
+
+.footer .grid_footer .location-col .contacts p, .contacts a{
+    margin-bottom: 1rem;
+    font-style: normal;
+    display: block;
+    color: #000;
+    }
+          .footer .grid_footer .location-col  .contacts p:last-of-type {
+            color: initial;
+            /* Hoặc giá trị khác mà bạn muốn áp dụng cho thẻ <p> cuối cùng */
+            font-size: initial;
+            text-decoration: initial;
+            margin-top: 1rem;
+            margin-bottom: 3rem;
+        }
